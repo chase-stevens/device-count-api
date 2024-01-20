@@ -10,6 +10,12 @@ This repo is a Ruby on Rails API for a server to receive and host device counts 
 - Run `bundle install` to install all third party packages are installed
 - Run `bin/rails s` to start the server
 
+## Reading the Repo
+- `config/routes.rb` for endpoints to the API
+- `app/controllers/v1/devices_controller.rb` for actions and routing requests
+- `app/models/device.rb` for Device specific logic
+- `lib/memory_store.rb` for connection to the Memcached data layer
+
 ## Checking the API
 - Create a device `post "/record_count"`
 - Update a device `post "/record_count"`
